@@ -1,0 +1,77 @@
+.button:hover,.likes a:hover,.greeting a:hover{
+	transition: all .3s ease;
+	background-color:#fff;
+	color:#07407A;
+}
+
+.top{
+	animation: fadeIn 2.5s ease;
+}
+
+.topback{
+	animation: slideUp 2s ease;
+}
+
+@keyframes fadeIn{
+
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		top:0px;
+	}
+}
+
+@keyframes slideUp{
+
+	0%{
+		top:40px;
+		opacity: 0;
+	}
+
+	100%{
+		top:0px;
+		opacity: 1;
+	}
+}
+
+.elem {
+	opacity: 0;
+	transition: 1.5s;
+	transform: translate(0,30px);
+	-webkit-transform: translate(0,30px);
+}
+
+.isAnimate {
+	opacity: 1;
+	transform: translate(0,0);
+	-webkit-transform: translate(0,0);
+}
+
+
+
+
+@media screen and (max-width: 1280px;){
+
+
+
+}
+
+@media screen and (max-width: 960px;){
+
+
+}
+
+@media screen and (max-width: 480px;){
+
+.img{
+	width:80%;
+}
+
+.topback img{
+	
+	width:10%;
+}
+
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=320,initial-scale=1">
+
+<title>ハジメマシテ-佐藤春菜</title>
+<meta name="author" content="佐藤春菜">
+<meta name="description" content="佐藤春菜の自己紹介ページです。なにはともあれ、ハジメマシテ。">
+<!--<meta property="og:title" content="search keyword" />-->
+<meta property="og:type" content="website" /><!-- website, article, etc... -->
+<meta property="og:site_name" content="ハジメマシテ-佐藤春菜" />
+<meta property="og:description" content="佐藤春菜の自己紹介ページです。なにはともあれ、ハジメマシテ。" />
+
+<link rel="icon" href="img/icon.ico">
+<!-- <link rel="apple-touch-icon" href=""> -->
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/base.css">
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/jquery.gsap.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107940123-1"></script>
+
+<script>
+      $(function(){
+        $('a[href^="#"]').click(function() {
+          var speed = 1000;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+
+    <script>
+		$(window).on('scroll', function (){
+
+		  var elem = $('.elem');
+		  var isAnimate = 'isAnimate';
+
+		  elem.each(function () {
+
+		    var elemOffset = $(this).offset().top;
+		    var scrollPos = $(window).scrollTop();
+		    var wh = $(window).height();
+
+		    if(scrollPos > elemOffset - wh + (wh / 2) ){
+		      $(this).addClass(isAnimate);
+		    }
+		  });
+		});
+ 	</script>
+
+</head>
+
+<body>
+
+	<div class="main_wrap">
+		<div class="main">
+
+			<div class="top_lv"><!--
+				--><img class="ti" src="img/title.png" alt="トップロゴ" title="トップロゴ"><!--
+				--><img class="as pukapuka" src="img/astronaut.png" alt="宇宙飛行士" title="宇宙飛行士">
+			</div>
+				<a href="#"><img class="back" src="img/topback.png" alt="topへ" title="topへ"></a>
+			<div class="Nav_wrap">
+
+				<ul class="main_Nav">
+					<li>
+						<a href="#1">01ハジメマシテ</a>
+					</li>
+					<li>
+						<a href="#2">02ワタシについて</a>
+					</li>	
+					<li>
+						<a href="#3">03スキなコト</a>
+					</li>
+					<li>
+						<a href="#4">04ミナサマへ</a>
+					</li>
+					<li>
+						<a href="../index.html">05キャンプにもどる</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="about elem" id="1">
+				<h2>01ハジメマシテ</h2>
+				<div class="abaut_article">
+					<p>
+						自己紹介サイト制作にあたり今回は「これから社会人が始まる」こと<br>
+						皆さんと「お初にお目にかかります」ことから、皆様へのあいさつと<br>
+						自分の意気込みをこめてこのテーマをつくりました。<br>
+						コンセプトは「宇宙」。よくわからないけどわくわくするイメージからです。<br>
+						なにはともあれ、ハジメマシテ。
+					</p>
+				</div>
+			</div>
+
+			<div class="me elem" id="2">
+				<h2>02ワタシについて</h2>
+				<div class="me_article">
+					<div class="even">
+						<h3>Name</h3>
+						<p>佐藤春菜</p>
+						<h3>Undergraduate</h3>
+						<p>札幌市立大学　デザイン学部　デザイン学科<br>
+							コンテンツデザインコース　所属</p>
+						<p>DTP・木工/金工もする・UI/UXもかじる<br>
+							アプリ開発・３DCG・からくり人形制作</p>
+						<h3>Hometown</h3>
+						<p>北海道　深川市</p>
+						<p>さむい　名物はウロコダンゴ</p>
+					</div><!--
+					--><img src="img/me.png" alt="ワタシについて" title="ワタシについて">
+				</div>
+			</div>
+
+			<div class="likes elem" id="3">
+				<h2>03スキなコト</h2>
+				<div class="likes_article"><!--
+					--><img src="img/like.png" alt="ワタシについて" title="ワタシについて"><!--
+					--><div class="odd">
+						<h3>Game</h3>
+						<p>小さい頃から暇さえあればやってます。</p>
+						<p>DS・PS Vita・PS4・Nintendo Switch・スマホゲーム<br>
+							リズムゲーム/ソシャゲ/アクション/RPG/...</p>
+						<h3>Music</h3>
+						<p>座って作業するときは必ず聴いてます。</p>
+						<p>AAA・ポルカドットスティングレイ・supercell・SiM</p>
+						<h3>Illust</h3>
+						<p>好きなものを好きなように描いてます。<br>
+							遊びでロゴもつくったりします。</p>
+						<p>Live2D・Photoshop・Illustlater</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="last elem" id="4">
+				<h2>04ミナサマへ</h2>
+				<div class="last_article">
+					<p>このサイトを通じて１mmでもワタシのことを知ってもらえたら嬉しいです。<br>
+					これから一緒に仕事をしていくみなさま、どうぞよろしくお願いいたします。<br>
+					そして、海外研修に参加する予定ですので、一緒にセブ島に向かうみなさん<br>
+					２ヶ月の間どうぞよろしくお願いいたします。<br>
+					それぞれ異なる分野を勉強してきたミナサマと力をあわせたら<br>
+					どんなものを創っていけるのか、どんな体験ができるのか今から楽しみです。<br>
+					改めまして、よろしくお願いいたします。<br>
+					佐藤春菜
+					</p>
+					<img src="img/astronaut_last.png" alt="ワタシについて" title="ワタシについて">
+				</div>
+			</div>
+
+		</div>
+	</div>	
+</body>

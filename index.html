@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>ここをキャンプ地とする_佐藤春菜</title>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="action.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+
+	<link rel="icon" href="img/icon.ico">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script>
+		$(window).on('scroll', function (){
+
+		var elem = $('.elem');
+		var isAnimate = 'isAnimate';
+
+		elem.each(function () {
+
+			var elemOffset = $(this).offset().top;
+			var scrollPos = $(window).scrollTop();
+			var wh = $(window).height()
+		if(scrollPos > elemOffset - wh + (wh / 2) ){
+			$(this).addClass(isAnimate);
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+	<div class="top">
+		<a href="#">
+			<img src="img/icon_topback.png" alt="↑top↑" class="topback">
+		</a>
+		<div class="img">
+			<img src="img/top_logo.png" alt="テント">
+		</div>
+	</div>
+
+	<div class="wrap elem">
+		<div class="greeting">
+			<div>
+				<h3><span class="marker">英語もろくに喋れないし<br>
+					暑さにも弱い道産子だけど、<br>
+					やってきたぞセブ島！</span></h3>
+				<p>住所不定のままセブ島サバイバル。<br>
+					およそ２ヶ月間のセブ島研修、<br>
+					英語とプログラミングをしっかり学んで<br>
+					上達して帰っているはず。<br>
+					ヤドンと一緒に頑張っていこう。</p>
+					<a href="site_1st/index.html">私と初めましての方はこちら→</a>
+			</div>
+			<img src="img/photo_first.png" alt="ぶみっ（鳴き声）">
+		</div>
+	</div>
+
+	<div class="vh elem">
+		<h2>研修の目標</h2>
+		<img src="img/goal.png" alt="">
+		<div class="goal_wrap_1">
+			<div class="goal">
+				<div class="goal_contents">
+					<img src="img/goal_1.png" alt="goal1">
+					<h4>ディレクターの子と<br>
+						<span class="marker">一緒にサイト作りたい</span></h4>
+				</div>
+				<div class="goal_contents">
+					<img src="img/goal_2.png" alt="goal2">
+					<h4><span class="marker">sass</span>を<br>
+						使いこなしたい</h4>
+				</div>
+				<div class="goal_contents">
+					<img src="img/goal_3.png" alt="goal3">
+					<h4><span class="marker">JavaScriptを</span><br>
+						ちゃんと理解したい</h4>
+				</div>
+			</div>
+		</div>
+		<div class="goal_wrap_2">
+			<div class="goal">
+				<div class="goal_contents">
+					<img src="img/goal_4.png" alt="goal4">
+					<h4>英語のレベルを<br>
+						<span class="marker">B→LI</span>に</h4>
+				</div>
+				<div class="goal_contents">
+					<img src="img/goal_5.png" alt="goal5">
+					<h4><span class="marker">WEBマーケティング</span>の<br>
+						理解を深める</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="vh elem">
+		<h2>好きなこと</h2>
+		<img src="img/likes.png" alt="">
+		<div class="wrap">
+			<div class="likes">
+				<img src="img/photo_second.png" alt="ボードゲーム">
+				<div>
+					<h3><span class="marker">最近はボードゲームとか<br>
+						脱出ゲームとかを<br>
+						やってます。</span></h3>
+					<p>ボードゲームカフェや脱出ゲームに参加して、<br>
+						知らない人と一緒に謎を解くのですが<br>
+						これが結構やりごたえあるので皆さんも是非。<br>
+						（あと大学時代はボドゲ作るの手伝ったりも）<br>
+						友達がボドゲ出したのでよろしくお願いします。</p>
+						<a href="https://booth.pm/ja/items/1090433">コトバーテルって知ってる？→</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="contact">
+			<form action="">
+				<h2>お問い合わせ</h2>
+				<p>私に用がある方はお気軽にご連絡ください。</p>
+				<!-- ////////////////// -->
+				<div class="form-group">
+					<label for="" class="label">お名前</label>
+					<input type="text" class="input-field">
+				</div>
+				<!-- ////////////////// -->
+				<div class="form-group">
+					<span class="label">返信希望先</span>
+					<span class="input-field">
+						<label for="line">
+							<input type="radio" id="line" name="gender">
+							LINE
+						</label>
+
+						<label for="mail">
+							<input type="radio" id="mail" name="gender">
+							Mail
+						</label>
+						<label for="phone">
+							<input type="radio" id="phone" name="gender">
+							電話
+						</label>
+					</span>
+				</div>
+				<!-- ////////////////// -->
+				<div class="form-group">
+					<span class="label">ご用件</span>
+					<span class="input-field">
+						<select name="" id="">
+							<option value="1" selected>買い物</option>
+							<option value="2">茶をしばく</option>
+							<option value="3">飲み会</option>
+							<option value="4">勉強会</option>
+						</select>
+					</span>
+				</div>
+				<!-- ////////////////// -->
+				<div class="form-group">
+					<span class="label">備考</span>
+					<span class="input-field">
+						<label for="">
+							<input type="checkbox" id="no late" name="other">
+							遅刻厳禁
+						</label>
+						<label for="">
+							<input type="checkbox" id="midnight" name="other">
+							オール希望
+						</label>
+						<label for="">
+							<input type="checkbox" id="talk" name="other">
+							相談したい
+						</label>
+						<label for="">
+							<input type="checkbox" id="voice only" name="other">
+							作業いぷのみ
+						</label>
+					</span>
+				</div>
+				<!-- ////////////////// -->
+				<div class="form-group">
+					<button type="submit" name="button" class="button">送信
+					</button>
+				</div>
+			</form>
+		</div>
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+$sp: 480px;  // スマホ
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.Nav_wrap{
+	.main_Nav{
+		position:fixed;
+		background-color:#000;
+		top:0;
+		padding:5px 0;
+		text-align:center;
+		width:100%;
+		margin:0 auto;
+
+		@include sp {
+		position:static;
+				};
+
+
+		li{
+			display:inline-block;
+			width:20%;
+			@include sp {
+			width:100%;
+				};
+		}
+		a{
+			font-size:20px;
+				@include sp {
+					font-size:14px;
+				};
+		}
+	}
+		& a:hover{
+			color:#CCD4C6;
+		}
+}
+
+.about,.likes{
+	color:#10172B;
+	padding:50px 0;
+	background-color:#fff;
+
+	h2{
+		text-align:center;
+	}
+
+	.likes_article{
+		width:60%;
+		margin:0 auto;
+	    padding: 20px;
+		border:solid 4px #10172B;
+	}
+
+	.odd{
+		font-size:14px;
+		display:inline-block;
+		text-align:left;
+		width:50%;
+		margin:0 auto;
+		padding:20px;
+		@include sp {
+			width:100%;
+		    padding: 0;
+		};
+
+		p+p{
+			text-align:center;
+			width:80%;
+			padding:10px;
+			line-height:20px;
+			border:solid 1px #10172B;
+			}
+		}
+	img{
+		width:44%;
+			@include sp {
+			margin-top:20px;
+			width:100%;
+		};
+	}
+
+}
+
+
+.about,.last{
+
+	p{
+		text-align:center;
+		width:100%;
+		line-height:34px;
+
+		@include sp {
+		line-height:26px;
+		    width: 60%;
+    		margin: 0 auto;
+				};
+	}
+}
+
+
+.me, .last{
+	margin-bottom:50px;
+	text-align:center;
+	color:#fff;
+	padding:50px 0;
+
+	.me_article{
+		width:60%;
+		margin:0 auto;
+	    padding: 20px;
+		border:solid 4px #fff;
+	}
+
+	.even{
+		font-size:14px;
+		display:inline-block;
+		text-align:left;
+		width:50%;
+		margin:0 auto;
+		padding:20px;
+
+		@include sp {
+			width:100%;
+		    padding: 0;
+		};
+
+		p+p{
+			text-align:center;
+			width:60%;
+			padding:10px;
+			line-height:20px;
+			border:solid 1px #fff;
+		}
+	}
+
+	img{
+		width:44%;
+			@include sp {
+			margin-top:20px;
+			width:100%;
+		};
+	}
+
+	.last_article img{
+		margin-top:50px;
+		width:12%;
+	}
+}
+

@@ -1,0 +1,109 @@
+.Nav_wrap .main_Nav {
+  position: fixed;
+  z-index: 10;
+  background-color: #000;
+  top: 0;
+  padding: 5px 0;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto; }
+  @media (max-width: 480px) {
+    .Nav_wrap .main_Nav {
+      position: static; } }
+  .Nav_wrap .main_Nav li {
+    display: inline-block;
+    width: 18%; }
+    @media (max-width: 480px) {
+      .Nav_wrap .main_Nav li {
+        width: 100%; } }
+  .Nav_wrap .main_Nav a {
+    font-size: 20px; }
+    @media (max-width: 480px) {
+      .Nav_wrap .main_Nav a {
+        font-size: 14px; } }
+.Nav_wrap a:hover {
+  color: #CCD4C6; }
+
+.about, .likes {
+  color: #10172B;
+  padding: 50px 0;
+  background-color: #fff; }
+  .about h2, .likes h2 {
+    text-align: center; }
+  .about .likes_article, .likes .likes_article {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: solid 4px #10172B; }
+  .about .odd, .likes .odd {
+    font-size: 14px;
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px; }
+    @media (max-width: 480px) {
+      .about .odd, .likes .odd {
+        width: 100%;
+        padding: 0; } }
+    .about .odd p + p, .likes .odd p + p {
+      text-align: center;
+      width: 80%;
+      padding: 10px;
+      line-height: 20px;
+      border: solid 1px #10172B; }
+  .about img, .likes img {
+    width: 44%; }
+    @media (max-width: 480px) {
+      .about img, .likes img {
+        margin-top: 20px;
+        width: 100%; } }
+
+.about p, .last p {
+  text-align: center;
+  width: 100%;
+  line-height: 34px; }
+  @media (max-width: 480px) {
+    .about p, .last p {
+      line-height: 26px;
+      width: 60%;
+      margin: 0 auto; } }
+
+.me, .last {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  padding: 50px 0; }
+  .me .me_article, .last .me_article {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: solid 4px #fff; }
+  .me .even, .last .even {
+    font-size: 14px;
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px; }
+    @media (max-width: 480px) {
+      .me .even, .last .even {
+        width: 100%;
+        padding: 0; } }
+    .me .even p + p, .last .even p + p {
+      text-align: center;
+      width: 60%;
+      padding: 10px;
+      line-height: 20px;
+      border: solid 1px #fff; }
+  .me img, .last img {
+    width: 44%; }
+    @media (max-width: 480px) {
+      .me img, .last img {
+        margin-top: 20px;
+        width: 100%; } }
+  .me .last_article img, .last .last_article img {
+    margin-top: 50px;
+    width: 12%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,192 @@
+body{
+	background-color: #42A640;
+}
+.top{
+	height: 100vh;
+	background-image: url(img/top_background.png);
+	background-repeat: no-repeat;
+	background-position: center center;/*縦横*/
+	background-size:cover;
+	background-attachment: fixed;
+	display: flex;
+	margin-bottom: 200px;
+}
+
+.vh{
+	height: 100vh;
+	position: relative;
+}
+
+.top p{
+	text-align: right;
+	color: white;
+}
+
+.img{
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	align-items: center;
+}
+
+.topback{
+	position: fixed;
+	margin:20px 0 0 30px;
+}
+
+.marker{
+	 background: -webkit-linear-gradient(transparent 50%, #F4A133 55%);
+
+}
+
+
+
+
+.wrap{
+	display: flex;
+}
+
+.greeting,.likes,.goal{
+	margin:auto;
+	width:900px;
+	display:inline-flex;
+	justify-content: space-around;
+}
+
+h2,h3,h4{
+	color: #fff;
+	font-weight: bold;
+}
+
+h4{
+	font-size: 26px;
+	line-height: 39px;
+	text-align: center;
+}
+
+h3{
+	font-size: 26px;
+	line-height: 39px;
+	text-align: left;
+}
+
+h2{
+	font-size: 32px;
+	line-height: 46px;
+	text-align: center;
+	margin:100px 0 50px;
+}
+
+h2+img{
+	width:190px;
+	opacity: .8;
+	position: absolute;
+	left: 50%;
+	top:-7%;
+}
+
+.greeting p,.likes p{
+	color:#fff;
+	font-size: 16px;
+	line-height: 28px;
+	margin-top: 50px;
+}
+
+.goal_wrap_1,.goal_wrap_2{
+	display: flex;
+}
+
+.goal_wrap_1{
+	margin-bottom: 40px;
+}
+
+.likes p,.greeting p{
+	margin-bottom:80px;
+}
+
+.likes a,.greeting a{
+	background-color:#07407A;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 17px;
+	padding:5px 20px;
+	margin:auto;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
+
+.contact{
+	margin:150px auto 0;
+	background-color: #eaeaea;
+	padding:30px 50px 10px 50px;
+	font-size: 20px;
+	border-top:10px solid #07407A;
+}
+
+.label{
+	width:200px;
+	margin-right: 80px;
+}
+
+.input-field{
+	height:40px;
+	width:800px;
+	color: #5A5A5A;
+	font-size: 16px;
+}
+
+.form-group{
+	display: flex;
+	margin:30px 0;
+	height:40px;
+	align-items: center;
+}
+
+.button{
+	background-color:#07407A;
+	color: #fff;
+	font-size: 16px;
+	width:80px;
+	line-height: 30px;
+	border-radius: 17px;
+	margin:auto;
+	text-align: center;
+}
+
+form{
+	width:900px;
+	margin:0 auto;
+}
+
+.contact h2{
+	color: #07407A;
+	margin:20px 0;
+	padding-bottom:20px;
+	border-bottom: solid 2px #F4A133;
+	position: relative;
+}
+
+.contact h2:after{
+	position: absolute;
+	content: "";
+	display: block;
+	border-bottom: solid 2px #07407A;
+	bottom: -2px;
+	width: 50%;
+}
+
+.contact p{
+	color: #5A5A5A;
+	text-align: center;
+	font-size: 16px;
+	margin: 30px 0 40px 0;
+}
+
+label{
+	margin-right: 30px;
+}
+
+
