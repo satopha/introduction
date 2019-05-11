@@ -17,11 +17,6 @@ body{
 	position: relative;
 }
 
-.top p{
-	text-align: right;
-	color: white;
-}
-
 .img{
 	text-align: center;
 	width: 100%;
@@ -38,9 +33,6 @@ body{
 	 background: -webkit-linear-gradient(transparent 50%, #F4A133 55%);
 
 }
-
-
-
 
 .wrap{
 	display: flex;
@@ -189,4 +181,16 @@ label{
 	margin-right: 30px;
 }
 
+
+@media screen and (max-width: 1280px;){
+
+.greeting p,.likes p{
+	color:#000;
+	font-size: 16px;
+	line-height: 28px;
+	margin-top: 50px;
+}
+
+
+}
 
