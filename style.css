@@ -242,6 +242,11 @@ label{
 	    margin-top: 12px;
 	}
 
+
+	textarea{
+		height:40px;
+		padding-right:100px;
+
 }
 
 @media screen and (max-width: 480px){
@@ -264,8 +269,8 @@ label{
 	}
 
 	.greeting p,.likes p{
-		margin:30px 0 80px;
-		font-size: .8em;
+		margin:30px 0 50%;
+		font-size: .7em;
 		line-height: 2em;
 		padding:12px;
 		text-align: center;
@@ -290,11 +295,11 @@ label{
 	}
 
 	h2+img{
-		width:170px;
+		width:120px;
 	}
 
 	.mo+img{
-		top:-4%;
+		top:-2%;
 	}
 
 	.form-group{
@@ -322,9 +327,14 @@ label{
 		margin-top:40px;
 	}
 
-
 	label{
 		margin-right: 0;
+	}
+
+	textarea{
+		height:60px;
+		width:100%;
+		padding-right:0;
 	}
 
 }
